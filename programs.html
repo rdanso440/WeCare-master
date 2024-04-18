@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>We Care</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="topnav" id="topNav">
+        <div class="nav-logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo" id="logo"></a>
+            <h4><a href="index.html">We Care</a></h4>
+        </div>
+        <ul class="menu-items" id="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li class="active"><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <div class="dropbtn">Account</div>
+                <div class="dropdown-content">
+                    <a href="signup.html">Signup</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </li>
+        </ul>
+        <div class="menu-icon" onclick="responsiveNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="programs-background"></div>
+
+    <div class="call2action">
+        <h1>YOU CAN MAKE CHANGES TODAY</h1>
+    </div>
+<!-- Image on right and text on left -->
+    <div class="program">
+        <div class="img">
+            <img src="img/foodrive.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>Food drive</h2>
+            <br>
+            <p>Children's charities are vital for addressing basic needs like food security. Food drives they organize serve as lifelines for families facing food insecurity, ensuring children have access to nutritious meals and fostering community and empathy. Through these drives, children learn compassion and actively participate by collecting and distributing food items. Additionally, they provide education on nutrition and healthy eating habits, empowering children to make better food choices.</p>
+            <br>
+            <p>These events often extend beyond meals, offering support services like educational resources and healthcare referrals. Overall, children's charities play a crucial role in nurturing compassion, fostering community spirit, and ensuring the well-being of vulnerable children. By engaging young volunteers and supporting families in need, these organizations create a brighter future for children and communities alike.</p>
+        </div>
+    </div>
+<!-- Image on left and text on right -->
+    <div class="program program-mid">
+        <div class="img">
+            <img src="img/educationfund.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>Education Funds</h2>
+            <br>
+            <p>A children's charity focused on education funds is a beacon of hope for countless young minds. By providing financial support for educational needs, such as tuition fees, school supplies, and extracurricular activities, these charities break down barriers to learning for underprivileged children. Through their initiatives, they empower children with the tools and resources necessary to pursue their academic goals and unlock their full potential. Moreover, beyond the immediate assistance, these charities often offer mentorship programs, tutoring sessions, and educational workshops, providing holistic support to ensure children thrive academically. </p>
+            <br>
+            <p>By investing in education, these charities not only uplift individual children but also contribute to building stronger, more resilient communities for the future. Through their dedication and commitment, they pave the way for a brighter tomorrow, where every child has the opportunity to receive a quality education and pursue their dreams.
+            </p>
+        </div>
+    </div>
+    <!-- Image on right and text on left -->
+    <div class="program">
+        <div class="img">
+            <img src="img/medic.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>Medical Support</h2>
+            <br>
+            <p>A children's charity dedicated to providing medical support is a lifeline for families facing health challenges. Through their compassionate efforts, these organizations offer crucial assistance to children battling illnesses or disabilities, ensuring they receive the medical care they need to thrive. Whether it's covering the costs of treatments, surgeries, medications, or specialized therapies, these charities alleviate financial burdens and provide peace of mind to families during difficult times. </p>
+            <br>
+            <p>Furthermore, they often go above and beyond by offering emotional support, counseling services, and access to support groups, fostering a sense of community and solidarity among families facing similar struggles. By investing in the health and well-being of children, these charities not only improve individual outcomes but also contribute to building healthier and happier communities. Their tireless dedication and unwavering commitment make a profound difference in the lives of vulnerable children and their families, offering hope and healing where it's needed most.</p>
+        </div>
+    </div>
+    <!-- Image on left and text on right -->
+    <div class="program program-mid">
+        <div class="img">
+            <img src="img/communevent.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>Community Events</h2>
+            <br>
+            <p>A children's charity focused on community events is a catalyst for joy, connection, and empowerment among young ones. Through a variety of engaging activities and gatherings, these organizations create inclusive spaces where children from diverse backgrounds can come together to learn, play, and grow. From fun-filled festivals and sports tournaments to educational workshops and art classes, these events provide opportunities for children to explore their interests, develop new skills, and build lasting friendships</p>
+            <br>
+            <p>Moreover, by involving children in the planning and execution of these events, charities foster leadership skills, teamwork, and a sense of ownership within the community. Beyond the immediate enjoyment, these events also serve as platforms for raising awareness about important issues affecting children and families, promoting social inclusion, and strengthening community bonds. Through their commitment to creating enriching experiences for children, these charities inspire hope, resilience, and a sense of belonging among the next generation.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <a href="index.html"><h2>We Care</h2></a>
+            </div>
+            <div class="learn-more">
+                <ul>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; Copyright 2024 WeCare.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

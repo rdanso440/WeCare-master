@@ -1,0 +1,1133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Nunito Sans', 'Roboto', sans-serif;
+}
+
+.home-background,
+.donate-background,
+.programs-background,
+.gallery-background,
+.story-background,
+.contact-background,
+.about-background,
+.account-background {
+    height: 100vh;
+    min-height: 100px;
+    
+}
+
+.home-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-home.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.donate-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-donate.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.programs-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-programs.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.gallery-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-gallery.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.story-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-story.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.contact-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-contact.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.about-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-about.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.account-background {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-account.jpg) no-repeat center center/cover; /*image with dark shade*/
+}
+
+.topnav {
+    width: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+    /* box-shadow: inset 0 0 50px rgba(0, 0, 0);  */
+    position: absolute;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+
+.topnav #logo {
+    float: left;
+    width: 70px;
+    height: auto;
+    padding: 10px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo h4 a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.topnav ul {
+    list-style-type: none;
+}
+
+.topnav ul li {
+    display: inline-block;
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+.topnav ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.topnav ul li.active a {
+    background-color: #ea4f4b;
+    color: #ffffff;
+}
+
+.topnav .menu-icon {
+    display: none;
+}
+
+.call2action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.call2action h1 {
+    color: #f8f7f7;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    transition: 0.5s ease;
+}
+
+.call2action button {
+    background-color: #ea4f4b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.call2action button:hover {
+    background-color: #8e0000;
+    color: #ffffff;
+}
+
+.intro-section {
+    color: #000000; /* Set the text color to black */
+    /* font-size: 16px; */
+    text-align: center; /* Align the text to the center */
+    background-color: rgba(255, 255, 255, 0.765);
+    padding: 60px; /* Add padding of 10 pixels */
+    margin: 0 auto; 
+}
+
+.evidence-section {
+    text-align: center; /* Center the image horizontally */
+    background-color: #ffc4c4; /* Background color for the square box */
+    padding: 60px;
+}
+
+.evidence-section .image-container {
+    margin: 30px 0px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.evidence-section .image-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.evidence-section .image-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 20px;
+}
+
+/* Handle */
+.evidence-section .image-container::-webkit-scrollbar-thumb {
+    background: #a02925; 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.evidence-section .image-container::-webkit-scrollbar-thumb:hover {
+    background: #8e0000;
+}
+
+.evidence-section .image-container img {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.donations,
+.team {
+    padding: 60px 30px;
+    width: 100%;
+}
+
+.donations .cards,
+.team .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.donations h2,
+.team h2 {
+    text-align: center;
+}
+
+.donations .card,
+.team .card {
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 15vw;
+    min-width: 220px;
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    background-color: #ffe6e6;
+    transition: 0.5s ease;
+}
+
+.donations .card img,
+.team .card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.donations .card b {
+    color: #0ea800;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 30px 50px;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+footer hr {
+    margin: 25px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo img {
+    float: left;
+    width: 120px;
+    height: auto;
+    padding: 10px;
+}
+
+.learn-more ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.learn-more ul li {
+    margin: 0 12px;
+}
+
+.learn-more ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-us .fa-brands {
+    padding: 10px;
+    font-size: 20px;
+    width: 2em;
+    text-decoration: none;
+    text-align: center;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.contact-us .fa:hover {
+    opacity: 0.7;
+}
+
+.contact-us .fa-facebook-f {
+    background: #3B5998;
+    color: #ffffff;
+}
+
+.contact-us .fa-x-twitter {
+    background: #000000;
+    color: #ffffff;
+}
+
+.contact-us .fa-instagram {
+    background: #dd2a7b;
+    color: #ffffff;
+}
+
+/* PROGRAMS */
+.program {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.program .img,
+.program .text {
+    width: 50%;
+    padding: 40px;
+}
+
+.program .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program img {
+    width: 100%;
+}
+
+.program-mid {
+    background-color: #ffc4c4;
+    flex-direction: row-reverse;
+}
+
+/* DONATE */
+.donation-form-section {
+    display: flex;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.8)), url(img/bg-home.jpg) no-repeat center center/cover; */
+}
+
+.donation-form-section .image {
+    width: 50%;
+    margin: 50px 0px 50px 50px;
+    background: url(img/donate.jpg) no-repeat center center/cover;
+    border: none;
+    border-radius: 15px;
+}
+
+.donation-form-section .form-container {
+    width: 50%;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.donation-form {
+    width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    /* background-color: #ffc4c4; */
+}
+
+.amount-container {
+    width: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.amount {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.amount input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.amount:hover input ~ .option {
+    background-color: #ea4f4b90;
+}
+
+/* When the radio button is checked, add a red background */
+.amount input:checked ~ .option {
+    background-color: #ea4f4b;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.amount input:checked ~ .option:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.amount .option:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Create a custom radio button */
+.option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #ffc4c4;
+    border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.option:after {
+    content: "";
+    display: none;
+    position: absolute;
+}
+
+.amount-field {
+    margin-top: 10px;
+    display: none;
+}
+
+.amount-field input::-webkit-outer-spin-button,
+.amount-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.donation-form .confirm {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.donation-form .donor p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.donor {
+    margin-bottom: 15px;
+}
+
+.donor input[type="text"],
+.donor input[type="email"],
+.amount-field input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.donation-form button {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #ea4f4b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donation-form button:hover {
+    color: #ffffff;
+    background-color: #8e0000;
+}
+
+.donation-form .link {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* STORY */
+.stories {
+    padding: 60px 30px;
+    width: 100%;
+}
+
+.stories .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.stories h2,
+.stories p {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.stories .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffe6e6;
+    transition: 0.3s ease;
+}
+
+.stories .card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* GALLERY */
+.gallery-section {
+    text-align: center; /* Center the image horizontally */
+    background-color: #ffffff; /* Background color for the square box */
+    padding: 20px;
+    
+}
+
+.gallery-section .image-container {
+    margin: 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-section .image-container img {
+    display: inline-block;
+    margin: 10px 10px;
+    width: 300px;
+}
+
+/* CONTACT */
+
+/* Add a background color and some padding around the form */
+.contact-form-container {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.contact-form-container h2{
+    text-align: center;
+}
+
+.contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+/* Style inputs with type="text", select elements and text areas */
+.contact-form-container input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.contact-form-container input[type=submit] {
+    background-color: #ea4f4b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-form-container input[type=submit]:hover {
+    color: #ffffff;
+    background-color: #8e0000;
+}
+
+/* Dropdown */
+.dropbtn {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .active{
+    background-color: #ea4f4b;
+    color: #ffffff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20;
+}
+
+.dropdown-content a {
+    color: #000000;
+    background-color: #bbbbbb;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #000000;
+    background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ACCOUNT */
+.account-action {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-action h1 {
+    color: #f8f7f7;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    transition: 0.5s ease;
+}
+
+.login-form-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Bordered form */
+.login-form-section form {
+    border: 3px solid #f1f1f1;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+/* Full-width inputs */
+.login-form-section input[type=text], 
+.login-form-section input[type=email], 
+.login-form-section input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+
+/* Set a style for all buttons */
+.login-form-section button {
+    background-color: #ea4f4b;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.login-form-section button:hover {
+    color: #ffffff;
+    background-color: #8e0000;
+}
+
+/* Extra style for the cancel button (red) */
+.login-form-section .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin-left: 20px;
+    background-color: #444444;
+}
+
+.login-form-section .cancelbtn:hover {
+    background-color: #111111;
+}
+
+/* Add padding to containers */
+.login-form-section .container {
+    padding: 16px;
+}
+  
+/* The "Forgot password" text */
+.login-form-section span .psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.signup-form-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form-section form {
+    max-width: 700px;
+    border-radius: 5px;
+}
+
+/* Full-width input fields */
+.signup-form-section input[type=email], 
+.signup-form-section input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.signup-form-section input[type=email]:focus, 
+.signup-form-section input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.signup-form-section hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signup-form-section button {
+    background-color: #ea4f4b;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signup-form-section button:hover {
+    background-color: #8e0000;
+}
+
+/* Extra styles for the cancel button */
+.signup-form-section .cancelbtn {
+    padding: 14px 20px;
+    background-color: #444444;
+}
+
+.signup-form-section .cancelbtn:hover {
+    background-color: #111111;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signup-form-section .cancelbtn, .signup-form-section .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.signup-form-section .container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.signup-form-section .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about-us {
+    color: #000000;
+    text-align: center;
+    padding: 60px;
+    margin: 0 auto; 
+}
+
+.about-us h2,
+.history h2 {
+    margin-bottom: 30px;
+}
+
+.history {
+    color: #000000;
+    text-align: center;
+    background-color: #ffc4c4;
+    padding: 60px;
+    margin: 0 auto; 
+}
+.team .card {
+    padding: unset;
+}
+
+.team .card img {
+    padding: 50px;
+}
+
+.team .cards h2 {
+    margin-top: -50px;
+}
+
+.team p {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 0.5px solid #8e0000;
+}
+
+th {
+    background-color: #ea504b50;
+    border-top-right-radius: 100px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .signup-form-section .cancelbtn, .signup-form-section .signupbtn {
+        width: 100%;
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .login-form-section span .psw {
+        display: block;
+        float: none;
+    }
+    .login-form-section .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 1000px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav .nav-logo {
+        width: 100%;
+    }
+
+    .topnav #logo {
+        margin-left: 30px;
+    }
+
+    .topnav .menu-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        font-size: 40px;
+        padding: 10px;
+        margin-right: 30px;
+        color: #ffffff;
+    }
+    
+    .topnav ul {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        display: none;
+    }
+    
+    .topnav ul li {
+        display: block;
+        border-top: 1px solid white;
+        background-color: #ec7975;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .topnav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 20px 50px;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+    }
+
+    .topnav ul li a:hover {
+        background-color: unset;
+        color: unset;
+    }
+    
+    .topnav ul li.active {
+        background-color: #ea4f4b;
+        pointer-events: none;
+    }
+
+    .topnav ul li.active a {
+        background-color: unset;
+    }
+    
+    .topnav ul li.active:hover a {
+        color: #ffffff;
+    }
+
+    .topnav ul li:hover {
+        background-color: #ffffff;
+    }
+
+    .topnav ul li:hover a {
+        color: #000000;
+    }
+    
+    .topnav .nav-active {
+        display: block;
+    }
+
+    .program {
+        flex-direction: column;
+    }
+
+    .program .img {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .program img {
+        max-width: 500px;
+    }
+
+    .program .text {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .learn-more {
+        margin: 40px 0;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .call2action h1 {
+        font-size: 40px;
+    }
+    
+    .call2action button {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .learn-more ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learn-more ul li{
+        margin: 5px 0;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .donations .cards,
+    .team .cards {
+        padding: 0 150px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .donations .cards,
+    .team .cards {
+        padding: 0 100px;
+    }
+}
+
+@media all and (max-width: 860px) {
+    .donations .cards,
+    .team .cards {
+        padding: 0 0;
+    }
+
+    .donation-form {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/donate.jpg) no-repeat center center/cover;
+    }
+    
+    .donor input[type="text"],
+    .donor input[type="email"],
+    .amount-field input[type="number"] {
+        background-color: #ffffff80;
+    }
+    
+    .donation-form-section {
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .donation-form-section .image {
+        display: none;
+    }
+    
+    .donation-form-section .form-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .donations .card,
+    .team .card {
+        padding: 20px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+        min-width: 160px;
+        margin: 20px;
+    }
+    
+    .donations .card img,
+    .team .card img {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .team .card img {
+        padding: unset;
+    }
+
+    .team .cards h2 {
+        margin-top: unset;
+    }
+    
+    .team p {
+        font-size: 11px;
+        margin-bottom: unset;
+    }
+}
+
+/* 
+.frequency {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4%;
+    background-color: #ffc4c4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.frequency span:first-child {
+    padding: 4%;
+    background-color: #ea4f4b;
+    border-radius: 10px;
+}
+
+.frequency span: {
+    padding: 4%;
+    background-color: #ea4f4b;
+    border-radius: 10px;
+}
+
+.frequency span {
+    padding-left: 25%;
+    cursor: pointer;
+} */
